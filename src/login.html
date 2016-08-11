@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap-demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<script src="./node_modules/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" href="login.css">-->
+</head>
+<body>
+<div class="login">
+    <div class="logo"> runner logo</div>
+    <div class="container">
+            <form class=" col-md-4 col-md-offset-4 form-horizontal" action="http://localhost:3000/login" method="post">
+                <h3 class="title">登录校园Runner</h3>
+                <div class="form-group">
+                    <label for="inputStuID" class="col-md-2 control-label">学号</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="inputStuId" id="inputStuID" placeholder="Student ID" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-md-2 control-label">密码</label>
+                    <div class="col-md-10">
+                        <input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="button-center">
+                        <button id="submit" class="btn btn-primary">登录</button>
+                        <button type="reset" class="btn btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>
+</body>
+</html>
